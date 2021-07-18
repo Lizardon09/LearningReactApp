@@ -3,6 +3,7 @@ import {State, Display, Table, CodeSnippet} from '../../components/index';
 import './ComponentFragmenting.scss';
 
 function ComponentFragmenting() {
+
     return (
         <div className="ComponentFragmenting">
             <header className="ComponentFragmenting-header">
@@ -14,7 +15,7 @@ function ComponentFragmenting() {
                 <br></br>
                 <p>Fragments let you group a list of children without adding extra nodes to the DOM.</p>
                 {TableDisplay()}
-                <CodeSnippet name="./ComponentFragmenting.scss"/>
+                <CodeSnippet directory='../../../src/components/State'/>
             </header>
         </div>
     );
@@ -32,7 +33,7 @@ function ParentWrappingDiv() {
 
 function NoParentWrappingDiv() {
     return(
-        <React.Fragment className="NoParentWrapping">
+        <React.Fragment>
             <h3>No Parent Wrapping Div (Componnet Fragmenting)</h3>
             <State/>
             <Display/>
