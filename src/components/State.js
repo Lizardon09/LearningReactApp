@@ -15,8 +15,4 @@ function State() {
     );
 }
 
-function test(){
-    return true;
-}
-
 export default State;

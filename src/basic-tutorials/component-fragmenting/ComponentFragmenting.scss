@@ -7,3 +7,11 @@
 .ParentWrapping, .NoParentWrapping, .tr {
     border: 2px solid;
 }
+
+.row {
+    display: flex;
+}
+
+.ExampleCode {
+    display: contents;
+}
