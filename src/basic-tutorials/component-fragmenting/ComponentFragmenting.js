@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import {State, Display, Table, CodeSnippet} from '../../components/index';
+import {State, Display, Table, CodeSnippet, CodeStrings} from '../../components/index';
 import './ComponentFragmenting.scss';
 import {Container, Row, Col} from 'react-bootstrap';
 import reactElementToJSXString from 'react-element-to-jsx-string';
@@ -8,8 +8,8 @@ import reactElementToJSXString from 'react-element-to-jsx-string';
 function ComponentFragmenting() {
 
     /* eslint import/no-webpack-loader-syntax: off */
-    const TableDisplayCodeString = require('!!raw-loader!../../../src/components/Table').default;
-    const ColumnsCodeString = require('!!raw-loader!../../../src/components/Columns').default;
+    const TableDisplayCodeString = CodeStrings.components.Table;
+    const ColumnsCodeString = CodeStrings.components.Columns;
 
     const ParentWrappingDivCode = reactElementToJSXString(ParentWrappingDiv(), {useFragmentShortSyntax: false});
     const NoParentWrappingDivCode = reactElementToJSXString(NoParentWrappingDiv(), {useFragmentShortSyntax: false});
