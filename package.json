@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.0.2",
+    "js-beautify": "^1.14.0",
     "node-sass": "^6.0.1",
     "prism-react-renderer": "^1.2.1",
     "raw-loader": "^4.0.2",

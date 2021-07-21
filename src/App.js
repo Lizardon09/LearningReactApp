@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import ComponentFragmenting from './basic-tutorials/component-fragmenting/ComponentFragmenting';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

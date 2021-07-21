@@ -1,17 +1,32 @@
 .ComponentFragmenting {
     border: 2px solid;
     padding: 35px;
-    width: 75%;
+    width: 85%;
 }
 
-.ParentWrapping, .NoParentWrapping, .tr {
+.ParentWrapping {
     border: 2px solid;
 }
 
-.row {
+.ImplimentationSection {
     display: flex;
+    align-items: center;
 }
 
-.ExampleCode {
-    display: contents;
+.tableChild {
+    display: flex;
+    flex-direction: column;
+    table, tr, td {
+        border: 2px solid;
+    }
+    th {
+        text-align: end;
+    }
 }
+
+#state-check, #display-check{
+    input {
+        display: none!important;
+    }
+    font-weight: 500;
+} 
