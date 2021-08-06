@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './static/logo512.png';
 import './App.css';
 import React from 'react';
 import ComponentFragmenting from './basic-tutorials/component-fragmenting/ComponentFragmenting';
