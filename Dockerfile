@@ -15,3 +15,8 @@ RUN npm install npm rebuild node-sass
 EXPOSE $PORT
 
 ENTRYPOINT ["npm", "start"]
+
+## Instructions
+
+# 1. Run docker build -t lizardon/learning-react -f Dockerfile .
+# 2. Run docker run -d --name learning-react -p 8080:3000 lizardon/learning-react
